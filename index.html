@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate percentage</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .divmain{
+            height: 100vh;
+            width:100vw;
+            background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);
+            text-align: left;
+            padding-top:20px;
+            line-height: 50px;
+            font-size: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        input{
+            margin-left: 330px;
+            padding: 5px;
+            padding-left: 10px;
+            font-size: 23px;
+            list-style: none;
+        }
+        input:focus{
+            outline: none;
+        }
+        button{
+            height: 45px;
+            width: 120px;
+            margin-top: 30px;
+            margin-left: 340px;
+            font-size: 17px;
+            border-radius: 6px;
+            background-color: rgb(27, 175, 101);
+            border:none;
+            box-shadow: 5px 5px 5px rgb(160, 160, 160);
+            cursor: pointer;
+        }
+        .reload{
+            margin-left: 40px;
+        }
+        button:hover{
+            transform: scale(1.1,1.1);
+            background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgb(27, 175, 101) 90% );
+        }
+        p{
+            margin-left: -150px;
+            margin-top: 200px;
+            color:rgb(65, 4, 65);
+            font-size: 40px;
+            font-weight: 300;
+        }
+        #result{
+            margin-top: 50px;
+        }
+        #emoji{
+            margin-top: 50px;
+             text-align: center;
+            font-size: 100px;
+        }
+        h1{
+            text-align: right;
+            padding-left: 500px;
+            font-size: 50px;
+            color: rgb(24, 97, 131);
+        }
+        h3{
+            margin-left: 100px;
+        }
+        span{
+            margin-left: 100px;
+        }
+        #total{
+            margin-left: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="divmain">
+        <!--<span>Enter your Hindi marks   :</span>       <span>Enter your Marathi marks :</span>       <span>Enter your English marks :</span>       <span>Enter your Maths marks   :</span>       <span>Enter your Science marks :</span>       <span>Enter your Social marks  :</span>       <span>Enter your Outoff marks  :</span>      <p id="display"></p>-->
+        <div>
+            <h1>Calculate your percentage</h1>
+
+            <h3>Enter the Subjects Marks :-</h3>
+
+            <input id="input1" type="number" placeholder="Hindi"><br>
+            
+            <input id="input2" type="number" placeholder="Marathi"><br>
+            
+            <input id="input3" type="number" placeholder="English"><br>
+            
+            <input id="input4" type="number" placeholder="Maths"><br>
+            
+            <input id="input5" type="number" placeholder="Science"><br>
+            
+            <input id="input6" type="number" placeholder="SocialScience"><br>
+            
+            <span> Enter your OutOff Marks  : </span>    <input id="total" type="number" placeholder="TotalMarks"><br>
+        
+            <button onclick=calculate()>Calculate</button><button onclick="location.reload();" class="reload">Refresh Page</button>
+
+        </div>
+        <div>
+            <p id="display"></p>
+            <p id="result"></p>
+            <p id="emoji"></p>
+        </div>
+    </div>
+<script src="../tse1task.js"></script>
+</body>
+</html>
